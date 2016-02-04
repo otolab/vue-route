@@ -40,7 +40,11 @@ module.exports = function(Vue) {
             path: null,
             componentId: null,
             params: null
-        }
+        },
+
+        // Must be applied before 'v-ref' directive
+        priority: 900
+
     }, component);
 
     // Extend the routing-related methods
